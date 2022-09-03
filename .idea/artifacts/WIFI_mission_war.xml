@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="WIFI_mission:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>WIFI_mission</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="WIFI_mission-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="WIFI_mission:war exploded" />
+    </root>
+  </artifact>
+</component>
