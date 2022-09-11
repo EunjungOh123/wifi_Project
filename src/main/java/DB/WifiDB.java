@@ -30,7 +30,7 @@ public class WifiDB {
             String sql = " SELECT (6371*acos(cos(radians(?))*cos(radians(`Y좌표`))*cos(radians(`X좌표`) " +
                     " -radians(?))+sin(radians(?))*sin(radians(`Y좌표`)))) AS 거리 " +
                     " ,wf.* " +
-                    " FROM wifi_practice wf " +
+                    " FROM wifi_info wf " +
                     " ORDER BY 거리 " +
                     " limit 20 ";
             preparedStatement = connection.prepareStatement(sql);
@@ -97,7 +97,7 @@ public class WifiDB {
             connection = DriverManager.getConnection(url, dbUserID, dbPassWord);
             connection.setAutoCommit(false);
 
-            String sql = " insert into wifi_practice( `관리번호`,`자치구`, `와이파이명`, `도로명주소`,`상세주소` " +
+            String sql = " insert into wifi_info( `관리번호`,`자치구`, `와이파이명`, `도로명주소`,`상세주소` " +
                     " ,`설치위치`,`설치유형`,`설치기관`,`서비스구분`,`망종류`,`설치년도`,`실내외구분`,`접속환경`,`X좌표`,`Y좌표`,`작업일자`) " +
                     " values( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,? ,? ,?) ";
 
