@@ -18,14 +18,14 @@
 <header>
     <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.jsp"><b>공공 와이파이 서비스</b></a>
+            <a class="navbar-brand" href="/"><b>공공 와이파이 서비스</b></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link" href="index.jsp">홈</a>
+                    <a class="nav-link" href="/">홈</a>
                     <a class="nav-link" href="history.jsp">위치 히스토리 목록</a>
                     <a class="nav-link" href="dataGet.jsp">Open Api 와이파이 정보 가져오기</a>
                 </div>
@@ -37,13 +37,13 @@
 <br>
 <form class = "myPlace">
     &nbsp;<label>LAT: </label>
-    &nbsp;<input type="text" id="latitude_Y" name="latitude_Y" class="input_form" style="vertical-align: middle"<%if(latitude_Y !=null){%>
+    &nbsp;<input type="text" id="latitude_Y" name="latitude_Y" class="inputPlace" style="vertical-align: middle"<%if(latitude_Y !=null){%>
                  value = <%=latitude_Y%>
                      <%}else{%> value = 0.0 <%}%>/>
 
     <label>LNT: </label>
 
-    &nbsp;<input type="text" id="longitude_X" name="longitude_X" class="input_form" style="vertical-align: middle" <%if(longitude_X !=null){%>
+    &nbsp;<input type="text" id="longitude_X" name="longitude_X" class="inputPlace" style="vertical-align: middle" <%if(longitude_X !=null){%>
                  value = <%=longitude_X%>
                      <%}else{%> value = 0.0 <%}%>/>&nbsp;
 

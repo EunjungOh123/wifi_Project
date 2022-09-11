@@ -8,6 +8,6 @@
 </head>
 <body style="text-align: center;">
 <h2><%=wifiOpenAPI.WifiCall()%>개의 와이파이 정보를 정상적으로 저장하였습니다</h2>
-<a class="home" href="index.jsp"><p style="text-align:center;">홈으로 가기</p></a>
+<a class="home" href="/"><p style="text-align:center;">홈으로 가기</p></a>
 </body>
 </html>
